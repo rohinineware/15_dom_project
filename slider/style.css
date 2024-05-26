@@ -1,0 +1,83 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 4rem;
+    position: relative;
+    border: 5px solid rgb(80, 36, 36);
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: transform 0.25s ease-in-out;
+    text-align: center;
+    background: rgb(193, 229, 254);
+    color: white;
+}
+
+
+.slide:nth-child(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./image5.jpg) center/cover no-repeat;
+}
+
+
+.slide h1{
+    font-size: 5rem;
+    margin-top: 20rem;
+}
+
+.slide:nth-child(1) h1{
+    position: absolute;
+}
+
+.person-img{
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+}
+
+.prebtn,
+.nextbtn
+{
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.75rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: grey;
+    transition:3ms all linear;
+
+}
+
+.prebtn:hover,
+.nextbtn:hover{
+    color: rgb(58, 47, 47);
+}
+

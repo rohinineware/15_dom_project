@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(216, 223, 220);
+}
+
+.section {
+    padding: 5rem 0;
+}
+  
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+img{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.title h2{
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.title p{
+    color: rgb(131, 125, 125);
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.about{
+    background: white;
+    border-radius: 2rem;
+    display: grid;
+    padding: 0.1rem;
+    grid-template-rows: auto 1fr;
+}
+
+.about-img img{
+    border-radius: 3rem;
+    object-fit: cover;
+    height: 20rem;
+}
+
+
+.about-center{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.tab-btn{
+    padding: 1rem 0;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: block;
+    background: grey;
+    cursor: pointer;
+    transition: 3s all linear;
+    letter-spacing: 0.2rem;
+}
+
+
+.tab-btn:hover:not(.active){
+    background: rgb(134, 115, 116);
+    color: white;
+}
+
+
+
+
+.about-content{
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.content{
+    display: none;
+}
+
+.tab-btn.active{
+    background: white;
+}
+
+.content.active{
+    display: block;
+}
+
+p{
+    margin: 1rem;
+    font-weight: bold;
+    color: rgb(124, 116, 116);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+

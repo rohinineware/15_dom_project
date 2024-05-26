@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.preloader{
+    position: fixed;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all 0.3s linear;
+
+}
+
+.hide-preloader{
+    z-index: -999;
+    visibility: hidden;
+}
+
+
+h1{
+    font-size: 4.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: capitalize;
+    margin-bottom: 0.70rem;
+    color: white;
+    display: block;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.switch-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    background: #ddd;
+    transition: all 0.3s linear;
+    
+}
+
+.switch-btn span{
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #49a6e9;
+    z-index: 1;
+}
+
+.switch{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #49a6e9;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s linear;
+    left: 0;
+}
+
+.slide .switch{
+    left: 50%;
+} 
+
+
+.video-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+
+}
+
+
+header{
+    place-items: center;
+    display: grid;
+    min-height: 100vh;
+    position: relative;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: -1;
+}
+
+
+
+
